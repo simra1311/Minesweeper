@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             for (int j = 0; j < size; ++j) {
                 CustomButton button = new CustomButton(this, i, j);
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT, 1);
-               // button.setBackgroundColor(getResources().getColor(R.color.black));
+                // button.setBackgroundColor(getResources().getColor(R.color.black));
                 button.setLayoutParams(params);
                 button.setOnClickListener(this);
                 button.setOnLongClickListener(this);
@@ -96,12 +96,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             int row = rand.nextInt(size);
             int col = rand.nextInt(size);
 
-            if(board[row][col].flag != -1) {
+            if (board[row][col].flag != -1) {
                 board[row][col].flag = -1;
                 setNeighbours(row, col);
                 noOfMines++;
             }
         }
+    }
         //setting nos to buttons
 
     private void setNeighbours(int row, int col) {
