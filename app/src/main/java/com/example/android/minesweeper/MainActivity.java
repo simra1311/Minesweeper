@@ -103,36 +103,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
         //setting nos to buttons
-//        for (int i = 0 ; i <size ;++i){
-//            for (int j = 0; j < size ; ++j){
-//                if (flag[i][j]==-1){
-//                    continue;
-//                }
-//                if (j-1>= 0 && flag[i][j-1] == -1)
-//                    flag[i][j]++;
-//                if (i-1 >= 0 && flag[i-1][j] == -1)
-//                    flag[i][j]++;
-//                if (i-1>=0 && j-1>=0 && flag[i-1][j-1]==-1)
-//                    flag[i][j]++;
-//                if (i+1<size && flag[i+1][j] == -1 )
-//                    flag[i+1][j]++;
-//                if (j+1<size && flag[i][j+1] == -1)
-//                    flag[i][j]++;
-//                if (i+1<size && j+1<size && flag[i+1][j+1] == -1)
-//                    flag[i][j]++;
-//                if (i+1<size && j-1>=0 && flag[i+1][j-1] == -1)
-//                    flag[i][j]++;
-//                if (i-1>=0 && j+1<size && flag[i-1][j+1] == -1)
-//                    flag[i][j]++;
-//            }
-//        }
-
-//        for (int i = 0; i < size; ++i) {
-//            for (int j = 0; j < size; ++j) {
-//                board[i][j].setText(board[i][j].flag + "");
-//            }
-//        }
-    }
 
     private void setNeighbours(int row, int col) {
         Log.i("TAG", "setNeighbours: at "+row+" "+col);
